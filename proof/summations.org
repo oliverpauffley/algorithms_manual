@@ -1,0 +1,28 @@
+#+TITLE: Summations
+#+OPTIONS: tex:dvipng
+
+* Summations
+Summations are concise ways of expressing the addition of a set of numbers.
+
+\begin{equation}
+\label{eq:1}
+\sum_{i=0}^n f(i) = f(1) + f(2) + f(3) + ... + f(n)
+\end{equation}
+
+There are some expressions that have a simplified closed form. e.g.
+
+\begin{equation}
+\label{eq:2}
+\sum_{i=0}^n 1 = n
+\end{equation}
+
+Or the sum of the first =n= even integers.
+\begin{align}
+\label{eq:3}
+s_{n} =& 2 + 4 + 6 + \ldots + 2n - 2 + 2n \\
+s_{n} =& 2n + 2n -2 + \ldots + 6 + 4 + 2 \\
+2s_{n} =& (2n + 2) + (2n + 2) + \ldots + (2n + 2) \\
+2s_{n} =& n(2n + 2) \\
+s_{n} =& \frac{n(2n+2)}{2} \\
+s_{n} =& n(n+1) \\
+\end{align}

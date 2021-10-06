@@ -1,0 +1,37 @@
+#+TITLE: Incremental Correctness (Induction)
+#+TAGS: proof induction computer-science
+#+OPTIONS: \n:t
+
+
+#+begin_quote
+Increment(y):
+    if  =y = 0= then =return(1)= else
+        if =(y mod 2) == 1= then
+            return =(2 · Increment(y/2))=
+        else =return (y + 1)=
+#+end_quote
+
+/Solution:/
+
+1. Base case =n=0=
+  Clearly if n=0 then =Increment(0)= returns 1.
+
+2. Assume true for all =n<y= prove for =n = y + 1=
+   When n is even, ie. =n=2k= then.
+  #+begin_quote
+Increment(2k) \\
+    =2k mod 2 == 0 =>= return =2k + 1=
+  #+end_quote
+
+  If n is odd such that =n = 2m + 1=
+=(2m + 1 mod 2) = 1= \\
+then
+\begin{equation}
+\begin{aligned}
+2 . increment([2m+1]/2) =& 2 . increment([m + 1/2]) \\
+ =& 2. increment(m) \\
+ =& 2(2m+1) \\
+ =& 2m+2 = y + 1 \\
+ \qed
+\end{aligned}
+\end{equation}
