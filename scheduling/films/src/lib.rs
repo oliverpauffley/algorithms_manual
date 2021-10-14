@@ -26,7 +26,6 @@ impl Film {
 
     /// Check if another Film overlaps with this film.
     /// returns true if any part of the other film is during the duration of this one.
-    /// // TODO fix this
     pub fn overlaps(&self, other: &Film) -> bool {
         !(other.end_date <= self.start_date || other.start_date >= self.end_date)
     }

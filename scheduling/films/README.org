@@ -1,0 +1,9 @@
+#+TITLE: Film Scheduling
+
+* Problem
+As an actor you want to select the highest number of films to star in. But, often the filming schedules will overlap and you can't be in both films. The aim of the algorithm is to pick the highest number of films to star in given the start and end dates for each one.
+
+* Solution
+1. Pick the film with the earliest end date.
+2. Remove an films that overlap with the first choice.
+3. Pick the next earliest end date until you run out of choices.
