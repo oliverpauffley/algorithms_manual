@@ -1,0 +1,24 @@
+#+TITLE: Modeling
+
+* Modeling
+Most algorithms are designed around abstract constructions whereas the problems we need to solve are usually for a particular business use case. To exploit the work of others we need to be able to model a problem in more general terms.
+
+** Combinatorial Objects
+Odds are very good that others have stumbled on the problems we are trying to solve. The trick is redefining a problem in common structures, such as:
+*** _Permutations_
+Which are arrangements of ordering of items. For example ={1,2,3,4}= and ={4,3,2,1}= are different permutations. Problems of this sort are likely looking for an arrangment, tour, ordering or sequence.
+*** _Subsets_
+Which represent selections from items. For exampl ={1}=, ={2,3,4}= are subsets of the first four numbers. Order in subsets normally does not matter. Subset problems might have words like cluster, collection, comittee, group, packinging or selection.
+*** _Trees_
+Which represent hierarchical relationships. Normally presented as hierarchy, ancestor or taxonomy problems.
+*** _Graphs_
+Which represent relationships between arbitrary pairs of objects. Graphs are the likely object in questions whenever you seek a network, circuit web or relationship.
+*** _Points_
+Which represent locations in some geometric space. Likely the object in site, postions, data records or location problems.
+*** _Polygons_
+Which represent regions in geometric space. The object in shape, region, configuration and boundary problems.
+*** _Strings_
+which represent sequences of characters or patterns. Likely used in text, characters patterns or label problems.
+
+** Recursive Objects
+All of the [[Combinatorial Objects]] can be thought of as recursive objects, taking away or adding another elements leaves you with the same type of object.
